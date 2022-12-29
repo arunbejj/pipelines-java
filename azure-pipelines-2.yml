@@ -11,6 +11,9 @@ pool:
   demands:
    - agent.name -equals vm-ubuntu
 
+#!/bin/bash
+echo "Steps Starting"
+
 steps:
 - task: Maven@3
   inputs:
