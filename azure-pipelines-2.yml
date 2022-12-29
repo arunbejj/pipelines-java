@@ -13,7 +13,7 @@ pool:
 
 steps:
 - bash: |
-echo "bash Step"
+    echo "bash Step"
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
