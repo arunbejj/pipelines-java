@@ -11,10 +11,9 @@ pool:
   demands:
    - agent.name -equals vm-ubuntu
 
-#!/bin/bash
-echo "Steps Starting"
-
 steps:
+- bash: |
+echo "bash Step"
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
